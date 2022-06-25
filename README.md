@@ -10,7 +10,7 @@ A framework to help making of dynamic NFTs on Tezos blockchain using ceramic str
 - `npm install` - installing all required packages
 - `ceramic daemon` - to run local node for ceramic network
   If running locally:
-- `glaze did:create` - required installed glaze
+- `glaze did:create`
 - `export DID_KEY=[seed generated with glaze must go here]` - exports key to cmd, please do all the interactions from now on with project through cmd you exported key to
   If not, an app is required to have an authenticated [Key DID](https://developers.ceramic.network/reference/accounts/key-did/) or [3ID DID](https://developers.ceramic.network/reference/accounts/3id-did/)
   
