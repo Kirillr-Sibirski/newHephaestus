@@ -24,9 +24,9 @@ const nft1 = {
     isTransferable: true,
     shouldPreferSymbol: false,
     isBooleanAmount: true,
-    artifactUri: "ipfs://bafkreiezptgh36vfxpsux4ebj3oyvpephpmhabey2v2p4yuwzkzjyzynqq",
-    displayUri: "ipfs://bafkreiezptgh36vfxpsux4ebj3oyvpephpmhabey2v2p4yuwzkzjyzynqq",
-    thumbnailUri: "ipfs://bafkreiezptgh36vfxpsux4ebj3oyvpephpmhabey2v2p4yuwzkzjyzynqq",
+    artifactUri: "ipfs://bafkreigrtwudn42qgqwyit2zvexdgdquqon24a2id2lyebyhhx236knvfa",
+    displayUri: "ipfs://bafkreigrtwudn42qgqwyit2zvexdgdquqon24a2id2lyebyhhx236knvfa",
+    thumbnailUri: "ipfs://bafkreigrtwudn42qgqwyit2zvexdgdquqon24a2id2lyebyhhx236knvfa",
     creators: ["sibirski"]
 }
 
