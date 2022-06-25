@@ -26,4 +26,4 @@ A framework to help making of dynamic NFTs on Tezos blockchain using ceramic str
  - To change images, change ipfs links in lines 60, 63, 66, 69 (updates to those images) and 57, 30, 31, 32 (basic) to yours.
  
  
- You can find an example of implementation in branch [example](https://github.com/Kirillr-Sibirski/newHephaestus/tree/example). It is merges with [this](https://learn.figment.io/tutorials/mint-nfts-on-tezos#next-steps) ([github](https://github.com/PriyanshuDangi/Tutorial_Mint_NFTs)) tutorial for simplicity.
+ You can find an example of implementation in branch [example](https://github.com/Kirillr-Sibirski/newHephaestus/tree/example). It is a merge with [this](https://learn.figment.io/tutorials/mint-nfts-on-tezos#next-steps) ([github](https://github.com/PriyanshuDangi/Tutorial_Mint_NFTs)) tutorial for simplicity.
