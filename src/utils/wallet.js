@@ -1,8 +1,9 @@
 import {TezosToolkit, MichelsonMap} from '@taquito/taquito';
 import {BeaconWallet} from '@taquito/beacon-wallet';
 import * as config from '../config/config';
-import {bytes2Char, char2Bytes} from '@taquito/utils';
+import {bytes2Char} from '@taquito/utils';
 import axios from 'axios';
+import { startChange, getStreamID } from './ceramic.js';
 
 const Tezos = new TezosToolkit(config.RPC_URL);
 
@@ -37,13 +38,13 @@ const getContract = async () => {
     const contract = await Tezos.wallet.at(config.CONTRACT_ADDRESS);
     return contract;
 };
-const mintNFT = async (address, url, token_id) => {
+const mintNFT = async (address, token_id) => { // url is replace by getStreamID
     await disconnectWallet();
     await connectWallet();
     const amount = 1;
     const contract = await getContract();
-    url = char2Bytes(url);
-    const op = await contract.methods.mint(address, amount, MichelsonMap.fromLiteral({'': url}), token_id).send();
+    startChange(1000); // calling a function to update data in ceramic stream every 1
+    const op = await contract.methods.mint(address, amount, MichelsonMap.fromLiteral({'': "ceramic://",getStreamID}), token_id).send(); //getStreamID()
     return await op.confirmation(3);
 };
 const getNFTs = async () => {
